@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Emoji Cursor Trail | JAVA Script</title>
+        <link rel="stylesheet" href="styleemoji.css">
+    </head>
+    <body>
+        <script type="text/javascript">
+            var images =['😀','😬','🤖','💅','🌏','🛢','🍪','🤐',
+            '🦀','🧪','🐞','⚠️','🚨','🚀','🔨','💡','🗑',
+            '👷‍♂️','🔒','🏞','🎞','🔈','📂','📦']
+
+            document.addEventListner("mousemove",function(e)
+            {
+                let body = document.querySelector('body');
+                let emoji = document.createElement('span');
+                let x = e.offsetX;
+                let y = e.offsetY;
+                emoji.style.left = X+'px';
+                emoji.style.top = Y+'px';
+                let size = Math.random()*50;
+
+                let icon = images[Math.floor(Math.random()*images.length)];
+
+                emoji.innerText = icon;
+
+                let max=0;
+                let min=200;
+                let random=Math.floor((Math.random()* ((max +1) - min)) + min);
+
+                emoji.style.fontSize= 5 + size ='px';
+                emoji.style.transform= 'translateX(' + random + 'px');
+
+                body.appendChild(emoji);
+                setTimeout(function(){
+                    emoji.remove();
+                },1000)
+            })
+
+        </script>
+    </body>
+</html>
