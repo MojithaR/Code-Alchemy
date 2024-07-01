@@ -1,0 +1,44 @@
+@{
+    ViewBag.Title = "React Integration Example";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <!-- Add React and ReactDOM -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <!-- Add Babel for JSX compilation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+
+    <div id="react-container"></div>
+
+    @section scripts {
+        <script type="text/babel">
+            class HelloMessage extends React.Component {
+                render() {
+                    return (
+                        <div>
+                            <h3>Hello, React in ASP.NET MVC5!</h3>
+                            <p>This is a simple React component integrated into ASP.NET MVC5.</p>
+                        </div>
+                    );
+                }
+            }
+
+            ReactDOM.render(
+                <HelloMessage />,
+                document.getElementById('react-container')
+            );
+        </script>
+    }
+
+</body>
+</html>

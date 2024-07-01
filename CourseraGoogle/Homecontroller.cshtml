@@ -1,0 +1,28 @@
+@model YourNamespace.Controllers.HomeController.UserInputModel
+
+@{
+    ViewBag.Title = "ASP.NET MVC Forms and Validation";
+}
+
+@using (Html.BeginForm("SubmitForm", "Home", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Name)
+        @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Email)
+        @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+}
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
