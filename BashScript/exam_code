@@ -1,0 +1,17 @@
+Ssearch_term = S_GET['q'];
+Ssql = "SELECT name, email, phone FROM users WHERE name LIKE
+'%Ssearch_term°/o"I;
+Sresult = mysqli_query(Sconn, Ssql);
+
+input = q' --
+
+Ssearch_term = S_GET['q' --'];
+Ssql = "SELECT name, email, phone FROM users WHERE name LIKE q ' --
+'%q' --°/o"I;
+Sresult = mysqli_query(Sconn, Ssql);
+
+input = q=' UNION SELECT 1,2,3 FROM information_schema.tables--
+
+Ssearch_term = S_GET['q=' UNION SELECT 1,2,3 FROM information_schema.tables--'];
+Ssql = "SELECT name, email, phone FROM users WHERE name LIKE ' UNION SELECT 1,2,3 FROM information_schema.tables--
+Sresult = mysqli_query(Sconn, Ssql);

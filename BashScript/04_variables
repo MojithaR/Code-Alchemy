@@ -1,0 +1,18 @@
+#!/bin/bash
+#Date: 22 Sep 2023
+#Creator: Mojitha
+#purpose: Understand about bash variables
+
+name="Ranasinghe";
+
+echo "$name";
+
+echo $name;
+
+echo "${name}!"
+
+wildcard="*.txt"
+options="iv"
+cp -$options $wildcard /tmp
+
+#END

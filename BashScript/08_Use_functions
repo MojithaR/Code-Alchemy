@@ -1,0 +1,23 @@
+#!/bin/bash
+#Date= 22 Sep 2023
+#Creator= Mojitha
+#Purpose = Use bash functions
+
+echo "Use bash functions ";
+
+x=9
+y=3
+
+Addition(){
+    echo $(($x + $y))
+}
+
+Substraction(){
+    echo $(($x - $y))
+}
+
+echo " sum of above $(Addition) ";
+
+echo " Subs of abovr $(Substraction) " ;
+
+#END

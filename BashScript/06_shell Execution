@@ -1,0 +1,10 @@
+#!/bin/bash
+#Date: 22 Sep 2023
+#Creator: Mojitha
+#purpose: how to execute shells
+
+echo "i'm in $(pwd)";
+
+echo "i'm in 'pwd' ";
+
+#end

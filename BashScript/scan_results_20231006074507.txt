@@ -1,0 +1,10 @@
+Scanning http://localhost/Viva%20Boat%20safari/MLB_16.01_07/Homepage.php for open ports...
+
+
+
+
+
+
+
+
+Port scanning finished.

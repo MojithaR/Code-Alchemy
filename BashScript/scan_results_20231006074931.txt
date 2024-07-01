@@ -1,0 +1,11 @@
+Scanning www.domai.com for open ports...
+Connection to www.domai.com (207.66.141.189) 80 port [tcp/http] succeeded!
+Port 80 is open
+Connection to www.domai.com (207.66.141.189) 443 port [tcp/https] succeeded!
+Port 443 is open
+
+
+Connection to www.domai.com (207.66.141.189) 25 port [tcp/smtp] succeeded!
+Port 25 is open
+
+

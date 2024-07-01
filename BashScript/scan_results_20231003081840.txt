@@ -1,0 +1,13 @@
+Scanning www.domain.com for open ports...
+Connection to www.domain.com (13.57.130.190) 80 port [tcp/http] succeeded!
+Port 80 is open
+Connection to www.domain.com (13.57.130.190) 443 port [tcp/https] succeeded!
+Port 443 is open
+
+
+Connection to www.domain.com (13.57.130.190) 25 port [tcp/smtp] succeeded!
+Port 25 is open
+
+
+
+Port scanning finished.

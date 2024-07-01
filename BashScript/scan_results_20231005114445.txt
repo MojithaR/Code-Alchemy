@@ -1,0 +1,10 @@
+Scanning 14_SNP_Transfer_FIles.sh for open ports...
+
+
+
+
+
+
+
+
+Port scanning finished.

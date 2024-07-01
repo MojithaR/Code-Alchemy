@@ -1,0 +1,15 @@
+#!/bin/bash
+#Date= 22 Sep 2023
+#Creator= Mojitha
+#Purpose = Learn Bash Script Functions
+
+echo "Learn Bash Script Functions";
+
+get_name() { 
+    echo "Logan" 
+}
+
+echo " DC movies produce new x-men movie named $(get_name) " ;
+echo " $(get_name) is the main cahracher";
+
+#END

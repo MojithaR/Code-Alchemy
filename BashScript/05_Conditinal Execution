@@ -1,0 +1,10 @@
+#!/bin/bash
+#Date: 22 Sep 2023
+#Creator: Mojitha
+#purpose: Get idea abot git
+
+git commit && git push
+git commit || echo "commit fail"
+
+
+#END
