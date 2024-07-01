@@ -1,0 +1,92 @@
+ 
+ /*Add a background image*/
+body,html{ 
+	  background-image:url("backgroundex2.jpg");
+      background-color:gray;
+	  background-repeat: repeat;
+	  background-size: cover;
+}
+/*center your Logo*/
+.logo{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:50%;
+	border-style:ridge;
+}
+/*Change the font type and font size*/
+h2{
+	
+	font-family:serif;
+	text-align:center;
+}
+h3{
+	font-family:sans-serif;
+	text-align:center;
+}
+/*Format the horizontal line*/
+hr{
+	border:2px ;
+	border-color:black;
+	background-color:black;
+}
+/*Style the menu list to display horizontally*/
+#Browser{
+	list-style-type:none;
+	margin:5px;
+	padding:2px;
+	overflow:hidden;
+	background-color:black;
+	
+}
+#browsersetting {
+	float:left;
+}
+li a{
+	display:block;
+	color:pink;
+	text-align:center;
+	padding:16px;
+	text-decoration:dotted;
+}
+a:hover{
+	background-color:gray;
+	font-size:large;
+}
+/*change table designing*/
+.ProductData{
+	background-image:url("background.jpg");
+	background-repeat:repeat;
+	background-cover:cover;
+	background-color:rgb(238, 140, 140);  /*change the background color of the table*/
+	margin:3px;                  /*Add a padding of 3px*/
+	
+	}
+	
+.ProData1{
+	text-align:center; /*Align the text in product name column to center*/
+}
+.ProData2{
+	text-align:left; /*Align the text in product description column to left */
+}
+table{
+	margin:15px 10px 10px 10px; /* Set top margin to 15px and other three margins as 10px*/
+	border: 3px darkblue; /*Make the border color, dark-blue. */
+	border-style:groove; /* Add a border and make that border’s style, ‘groove’. */
+	border-collapse:collapse;
+	width:100%;
+	height:100%;
+	padding:3px; /*Add a padding of 3px*/
+}
+th,td{
+	font-size:medium;
+	font-weight:bold;
+	border:1px solid black;
+	border-collapse:collapse;
+	padding:3px;  /*Add a padding of 3px*/
+}
+/*Footer  ..Align the texts center,Change the font style of the text */
+h4,h5{
+	text-align:center;
+	font-family:monospace;
+}
