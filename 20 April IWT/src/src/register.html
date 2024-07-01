@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	
+    <script src ="js/myScript.js"></script>
+	
+</head>
+<body>
+<img class="logo" src="images/cart.png" width="200" height="200" alt="Shopping Cart Image">
+<center>
+	<h1>Shopping cart</h1>
+	<h3 id="header">The Online Shopping Store</h3>
+<hr id="test"/>
+</center>
+<ul class="menu">
+	<li class="menu"><a href="index.html">Home</a></li>
+	<li class="menu"><a href="news.html">News</a></li>
+	<li class="menu"><a href="register.html">Contact</a></li>
+	<li class="menu"><a href="about.php">About Us</a></li>
+</ul>
+
+<center> <h3>Register Form</h3> </center>
+	
+	<section class="register" onsubmit="return checkPassword ()">
+        <form>
+
+            First Name : <br>
+            <input type="text" name="firstName" placeholder="Enter first name" required> <br>
+
+            Last Name : <br>
+            <input type="text" name="lastName" placeholder="Enter last name" required>
+
+            Gender : <br>
+            <input type="radio" id="Male" name="gender" value="Male">Male
+            <input type="radio" id="Female" name="gender" value="Female">Female<br> <br>
+
+            Mobile Number : <br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" placeholder="07X-XXXXXXX" required> <br> 
+
+            Email : <br>
+            <input type="email" id="email" name="email" placeholder="Enter email" required> <br> 
+
+            Address : <br>
+            <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Enter Address"></textarea> <br> 
+
+            Date of Birth : <br>
+            <input type="date" name="dob" required> <br>
+
+            Password : <br>
+            <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> <br> 
+
+            Re-enter Password : <br>
+            <input type="password" id="repsw" name="repsw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> <br> 
+
+            <input type="checkbox" id="checkbox" onclick="enableButton()"> Accept privacy policy and terms <br> <br>
+
+            <input type="submit" value="Submit" id="submitbtn" disabled>
+
+
+        </form>
+
+    </section>
+
+
+<center>
+<h3 style="font-weight: bold; font-style: italic;">Created By : <a href="https://courseweb.sliit.lk/"> Sithum Senanayake </a></h3>
+</center>
+</body>
+</html>

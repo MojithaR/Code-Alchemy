@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+    
+    <script src="js/myScript.js"></script>
+
+	<script>
+		document.write(Date());
+	</script>
+
+</head>
+<body>
+<img class="logo" src="images/cart.png" width="200" height="200" alt="Shopping Cart Image">
+<center>
+	<h1>Shopping cart</h1>
+	<h3 id="header">The Online Shopping Store</h3>
+<hr id="test"/>
+</center>
+<ul class="menu">
+	<li class="menu"><a href="index.html">Home</a></li>
+	<li class="menu"><a href="news.html">News</a></li>
+	<li class="menu"><a href="register.html">Contact</a></li>
+	<li class="menu"><a href="about.php">About Us</a></li>
+</ul> <br>
+<center>
+<div>    
+    <button class="bttn1" type="button" id="btn1" onclick="loadData('btn1')">iPhone</button>
+    <button class="bttn1" type="button" id="btn2" onclick="loadData('btn2')">Nokia</button>
+    <button class="bttn1" type="button" id="btn3" onclick="loadData('btn3')">Samsung</button>
+	<button class="bttn1" type="button" id="btn4" onclick="loadData('btn4')">Oppo</button>
+    <button class="bttn1" type="button" id="btn5" onclick="loadData('btn5')">Xiaomi</button> <br>
+    <button class="bttn1" type="button" id="avg" onclick="priceForInLoop()">Average Price</button>
+	<button class="bttn1" type="button" id="avg" onclick="priceHigher()">Prices higher than 1000</button>
+	<button class="bttn1" type="button" id="avg" onclick="pricelower()">Prices lower than 800</button>
+</div> <br> <br>
+</center>
+<section class="news_section">
+	<br> <br>
+	<center>
+		<img id="image1" src="images/iphone.jpg" width="750" heigth="750">
+	</center>
+
+	<p class="text1" id="para" >The iPhone is a smartphone made by Apple that combines a computer, iPod, digital camera and 
+    	cellular phone into one device with a touchscreen interface. The iPhone runs the iOS operating system, and in 2021 when 
+    	the iPhone 13 was introduced, it offered up to 1 TB of storage and a 12-megapixel camera.
+	</p>
+	<br> <br>
+</section>
+<center>
+    <h3 style="font-weight: bold; font-style: italic;">Created By : <a href="https://courseweb.sliit.lk/"> Sithum Senanayake </a></h3>
+</center>
+
+</body>
+</html>

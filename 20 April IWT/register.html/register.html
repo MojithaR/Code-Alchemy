@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head> <!--Adding a title as (a)-->
+        <title>
+            Registration Form
+        </title>
+        <link rel="formstyle" href="formstyle.css" type="text/css">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <!--Adding image as (b)-->
+        <img src="shopping cart.png" alt="Shopping Cart" 
+        width="200px" height="200px">
+
+        <!--Adding heding as (c)-->
+        <article>
+            <header>
+                <h3 id="Thor">Shopping Cart</h3>
+                <h3 id="Thor">Online Shopping Store</h3>
+            </header>
+
+            <hr>  <!--Adding horizontal line as (d)-->
+        </article>
+                 <!--Adding menu bar line as (e)-->
+        <ul id="loki" >
+            <li id="odin"><a href="#home">Home</a></li>
+            <li id="odin"><a href="#News">News</a></li>
+            <li id="odin"><a href="#">Contact</a></li>
+            <li id="odin"><a href="#About">About</a></li>
+        </ul>
+         <center>
+            <h2>Registration Form</h2>
+            <action action="#" target="_self" method="post" onsubmit="checkPassword()">
+
+              First Name:<br/>
+              <input type="text" name="First name" placeholder="Enter your First name" required><br/><br/>
+
+              Last Name:<br/>
+              <input type="text" name="Last name" placeholder="Enter your Last name" required><br/><br/>
+              
+              Gender:<br/>
+              <input type="radio" name="Gender" checked>Male<br/>
+              <input type="radio" name="Gender">Female <br/>
+
+              Mobile Number:<br/>
+              <input type="Phone" name="Mobile number" placeholder="0777777777" pattern="[0-9](10)" required>
+              <br/><br/>
+
+              E-mail:<br/>
+              <input type="email" name="E-mail" placeholder="abc@gmail.com" pattern="[a-z0-9]!#$%^&*_+@[a-z0-9]!#$%^&*_.[a-z]{2,3}" required>
+              <br/><br/>
+
+              Adress:<br/>
+              <textarea name="adress"  cols="50" rows="8" required></textarea>
+              <br/><br/>
+
+              Birthday:<br/>
+              <input type="date" name="day" required><br/><br/>
+
+              password:<br/>
+              <input type="password" id="Thor" pattern="(?=.+\d)(?=.+[a-z])(?=.+[A-Z]).{5,10}" required>
+              <br/><br/>
+
+              re-enter password:<br/>
+              <input type="password" id="cnfrmThor"  required>
+              <br/><br/>
+
+              <input type="checkbox" id="checkbox" class="inputstyle"
+              onclick="enablebutton()"> Accept Privacy policy and terms
+              <br/><br/>
+              <center>
+                <input type="submit" value="Submit" id="Submitbtn" disabled>
+              </center>
+
+
+
+
+             </action>
+            </form>
+
+
+
+
+
+
+          <!--Adding creators name and hyper link-->
+         <h4> Created by Mojitha Ranasinghe </h4>
+         <h4><a id="asgaurdian" href="https://courseweb.sliit.lk/">Visit to Our course</a></h4>
+         
+         <!--End of page designing-->
+         </center>    
+    </body>
+</html> [7:47 PM] Mihiri Samaraweera
+
+
+
+
+mihiri.s@sliit.lk
+
+

@@ -1,0 +1,107 @@
+/*style.css*/
+/*backgroundex2.jpg*/
+    /*start background designs*/  
+    body,html{
+                background-image: url("backgroundex2.jpg");
+                height: 100%;
+                background-attachment: fixed;
+                background-size: contain;
+             }
+     /*start logo designs*/          
+    img{  
+                border-radius: 50%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    /*start under logo topic designs*/  
+    #Thor{
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 24px;
+                font-weight: bolder;
+        }
+
+
+            /*start designing horizontal line designs*/
+            hr{
+                height: 2px;
+                border: 1px;
+                color: black;
+                background-color:darkblue;
+            }
+
+            /*Horizontal Navigation bar*/
+
+                    /*Adding menu bar designs*/
+                    #loki{
+                        list-style-type: none;
+                        margin: 5px;
+                        padding: 2px;
+                        overflow: hidden;
+                        background-color: black;
+                    }
+    
+                    #odin{
+                        float: left;
+                    }
+                    li a{
+                        display: block;
+                        color: aliceblue;
+                        text-align: center;
+                        padding: 16px;
+                        text-decoration: dotted;
+                    }
+                    a:hover{
+                        background-color: pink;
+                        font-size: large;
+                    }
+                /*end of Adding menu bar designs*/       /*finish menu bar designs*/
+
+              /*  Table designs*/
+
+        /*Start table designs*/
+            table{
+                border: 3px solid black;
+                border-collapse: collapse;
+                width: 100%;
+                height: 100%;
+                background-color:rgb(255, 172, 172);
+
+                margin-top: 15px;   /*Set top margin to 15px and other three margins as 10px*/
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-right: 10px; /*another way to do it 
+                margin 15px 10px 10px 10px; */
+
+                border-style: groove;  /*o Add a border and make that border’s style, ‘groove’.
+                o Make the border color, dark-blue*/
+                border-color:darkblue;
+
+            }
+            th,td{
+                text-align: center;
+                font-size: medium;
+                font-weight: bold;
+                border: 1px solid gray;
+                border-collapse: collapse;
+                border-color:gray;
+            }
+            li{
+                text-align: left;
+            }
+            /*finish table designs*/
+
+         /*footer hyperlink designs*/
+          h4{
+                color: gray;
+                text-align: center;
+                font-weight: bolder;
+                font-weight: 200;
+                font-style: oblique;
+          }
+        #asgaurdian{
+                    color: blue;
+                    text-align: center;
+                    font-style: inherit 
+            }
