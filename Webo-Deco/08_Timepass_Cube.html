@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7x7 Cube Grid</title>
+  <style>
+    @keyframes animate {
+      0% {
+        filter: hue-rotate(0deg);
+      }
+      100% {
+        filter: hue-rotate(360deg);
+      }
+    }
+
+    .container {
+      position: relative;
+      top: -80px;
+      transform: skewY(-20deg);
+      animation: animate 5s linear infinite;
+    }
+
+    .cube {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cube:nth-child(2) {
+      z-index: 1;
+      transform: translate(-60px, -60px);
+    }
+
+    .cube:nth-child(3) {
+      z-index: 3;
+      transform: translate(60px, 60px);
+    }
+
+    .cube div {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      transform: translate(calc(-70px * var(--x)), calc(-60px * var(--y)));
+    }
+
+    .cube div span {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background: #dcdcdc;
+      z-index: calc(1 * var(--i));
+      transition: 1.5s;
+    }
+
+    .cube div span:hover {
+      transition: 0s;
+      background: #ef4149;
+      filter: drop-shadow(0 0 30px #ef4149);
+    }
+
+    .cube div span:hover:before,
+    .cube div span:hover:after {
+      transition: 0s;
+      background: #ef4149;
+    }
+
+    .cube div span:before {
+      content: "";
+      position: absolute;
+      left: -40px;
+      width: 40px;
+      height: 100%;
+      background: #fff;
+      transform-origin: right;
+      transform: skewY(45deg);
+      transition: 1.5s;
+    }
+
+    .cube div span:after {
+      content: "";
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background: #f2f2f2;
+      transform-origin: bottom;
+      transform: skewX(45deg);
+      transition: 1.5s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Loop to create 7x7 cubes -->
+    <div class="cube">
+      <!-- Cube rows -->
+      <div style="--x:-3; --y:-3;">
+        <span style="--i:3;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:1;"></span>
+      </div>
+      <div style="--x:-2; --y:-3;">
+        <span style="--i:3;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:1;"></span>
+      </div>
+      <div style="--x:-1; --y:-3;">
+        <span style="--i:3;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:1;"></span>
+      </div>
+      <div style="--x:0; --y:-3;">
+        <span style="--i:3;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:1;"></span>
+      </div>
+      <div style="--x:1; --y:-3;">
+        <span style="--i:3;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:1;"></span>
+      </div>
+      <div style="--x:2; --y:-3;">
+        <span style="--i:3;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:1;"></span>
+      </div>
+      <div style="--x:3; --y:-3;">
+        <span style="--i:3;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:1;"></span>
+      </div>
+
+      <!-- Add more rows to make it 7x7 -->
+      <div style="--x:-3; --y:0;">
+        <span style="--i:3;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:1;"></span>
+      </div>
+      <div style="--x:0; --y:0;">
+        <span style="--i:3;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:1;"></span>
+      </div>
+      <div style="--x:3; --y:0;">
+        <span style="--i:3;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:1;"></span>
+      </div>
+      <div style="--x:-3; --y:3;">
+        <span style="--i:3;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:1;"></span>
+      </div>
+      <div style="--x:0; --y:3;">
+        <span style="--i:3;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:1;"></span>
+      </div>
+      <div style="--x:3; --y:3;">
+        <span style="--i:3;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:1;"></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

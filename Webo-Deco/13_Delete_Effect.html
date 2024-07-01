@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmation Box</title>
+  <style>
+    /* TailwindCSS */
+    .group:hover .group-hover\:animate-bounce {
+      animation: bounce 1s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-25%);
+      }
+    }
+    /* Inline styles for the demo */
+    .select-none {
+      user-select: none;
+    }
+    .w-\[250px\] {
+      width: 250px;
+    }
+    .flex {
+      display: flex;
+    }
+    .flex-col {
+      flex-direction: column;
+    }
+    .p-4 {
+      padding: 1rem;
+    }
+    .relative {
+      position: relative;
+    }
+    .items-center {
+      align-items: center;
+    }
+    .justify-center {
+      justify-content: center;
+    }
+    .bg-gray-800 {
+      background-color: #2d3748;
+    }
+    .border {
+      border-width: 1px;
+    }
+    .border-gray-800 {
+      border-color: #2d3748;
+    }
+    .shadow-lg {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    .rounded-2xl {
+      border-radius: 1rem;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .p-3 {
+      padding: 0.75rem;
+    }
+    .flex-auto {
+      flex: 1 1 auto;
+    }
+    .group-hover\:animate-bounce {
+      animation: bounce 1s infinite;
+    }
+    .w-12 {
+      width: 3rem;
+    }
+    .h-12 {
+      height: 3rem;
+    }
+    .text-gray-600 {
+      color: #718096;
+    }
+    .fill-red-500 {
+      fill: #f56565;
+    }
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .text-xl {
+      font-size: 1.25rem;
+    }
+    .font-bold {
+      font-weight: 700;
+    }
+    .py-4 {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    .text-gray-200 {
+      color: #edf2f7;
+    }
+    .text-sm {
+      font-size: 0.875rem;
+    }
+    .text-gray-500 {
+      color: #a0aec0;
+    }
+    .px-2 {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    .p-2 {
+      padding: 0.5rem;
+    }
+    .mt-2 {
+      margin-top: 0.5rem;
+    }
+    .space-x-1 > :not(:first-child) {
+      margin-left: 0.25rem;
+    }
+    .md\:block {
+      display: block;
+    }
+    .mb-2 {
+      margin-bottom: 0.5rem;
+    }
+    .md\:mb-0 {
+      margin-bottom: 0;
+    }
+    .bg-gray-700 {
+      background-color: #4a5568;
+    }
+    .px-5 {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
+    .py-2 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    .shadow-sm {
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    }
+    .font-medium {
+      font-weight: 500;
+    }
+    .tracking-wider {
+      letter-spacing: 0.05em;
+    }
+    .border-2 {
+      border-width: 2px;
+    }
+    .border-gray-600 {
+      border-color: #718096;
+    }
+    .hover\:border-gray-700:hover {
+      border-color: #4a5568;
+    }
+    .text-gray-300 {
+      color: #d1d5db;
+    }
+    .rounded-full {
+      border-radius: 9999px;
+    }
+    .hover\:shadow-lg:hover {
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    .hover\:bg-gray-800:hover {
+      background-color: #2d3748;
+    }
+    .transition {
+      transition: all 0.2s;
+    }
+    .ease-in {
+      transition-timing-function: ease-in;
+    }
+    .duration-300 {
+      transition-duration: 0.3s;
+    }
+    .bg-red-500 {
+      background-color: #f56565;
+    }
+    .hover\:bg-transparent:hover {
+      background-color: transparent;
+    }
+    .ml-4 {
+      margin-left: 1rem;
+    }
+    .hover\:text-red-500:hover {
+      color: #f56565;
+    }
+    .hover\:border-red-500:hover {
+      border-color: #f56565;
+    }
+  </style>
+</head>
+<body>
+  <div
+    class="group select-none w-[250px] flex flex-col p-4 relative items-center justify-center bg-gray-800 border border-gray-800 shadow-lg rounded-2xl"
+  >
+    <div class="">
+      <div class="text-center p-3 flex-auto justify-center">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          class="group-hover:animate-bounce w-12 h-12 flex items-center text-gray-600 fill-red-500 mx-auto"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
+            fill-rule="evenodd"
+          ></path>
+        </svg>
+        <h2 class="text-xl font-bold py-4 text-gray-200">Are you sure?</h2>
+        <p class="font-bold text-sm text-gray-500 px-2">
+          Do you really want to continue? This process cannot be undone.
+        </p>
+      </div>
+      <div class="p-2 mt-2 text-center space-x-1 md:block">
+        <button
+          class="mb-2 md:mb-0 bg-gray-700 px-5 py-2 text-sm shadow-sm font-medium tracking-wider border-2 border-gray-600 hover:border-gray-700 text-gray-300 rounded-full hover:shadow-lg hover:bg-gray-800 transition ease-in duration-300"
+        >
+          Cancel
+        </button>
+        <button
+          class="bg-red-500 hover:bg-transparent px-5 ml-4 py-2 text-sm shadow-sm hover:shadow-lg font-medium tracking-wider border-2 border-red-500 hover:border-red-500 text-white hover:text-red-500 rounded-full transition ease-in duration-300"
+        >
+          Confirm
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

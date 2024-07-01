@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Card</title>
+  <style>
+    /* TailwindCSS */
+    .group:hover .group-hover\:duration-1000 {
+      transition-duration: 1000ms;
+    }
+    .group:hover .group-hover\:-translate-y-16 {
+      transform: translateY(-4rem);
+    }
+    .group:hover .group-hover\:opacity-0 {
+      opacity: 0;
+    }
+    .group:hover .group-hover\:scale-0 {
+      transform: scale(0);
+    }
+    .group:hover .group-hover\:rotate-180 {
+      transform: rotate(180deg);
+    }
+    .group:hover .group-hover\:[clip-path\:polygon\(50\%\_0\%\,\_100\%\_0\,\_0\_0\)] {
+      clip-path: polygon(50% 0%, 100% 0, 0 0);
+    }
+    .transition-all {
+      transition: all 0.3s;
+    }
+    .duration-300 {
+      transition-duration: 300ms;
+    }
+    .duration-700 {
+      transition-duration: 700ms;
+    }
+    .duration-1000 {
+      transition-duration: 1000ms;
+    }
+    .relative {
+      position: relative;
+    }
+    .absolute {
+      position: absolute;
+    }
+    .bg-black {
+      background-color: #000;
+    }
+    .bg-white {
+      background-color: #fff;
+    }
+    .bg-neutral-800 {
+      background-color: #2f2f2f;
+    }
+    .bg-neutral-900 {
+      background-color: #1a1a1a;
+    }
+    .bg-rose-500 {
+      background-color: #f43f5e;
+    }
+    .text-gray-500 {
+      color: #6b7280;
+    }
+    .text-gray-700 {
+      color: #374151;
+    }
+    .text-red-800 {
+      color: #9b2c2c;
+    }
+    .font-serif {
+      font-family: serif;
+    }
+    .font-sans {
+      font-family: sans-serif;
+    }
+    .font-semibold {
+      font-weight: 600;
+    }
+    .font-medium {
+      font-weight: 500;
+    }
+    .w-\[300px\] {
+      width: 300px;
+    }
+    .sm\:w-\[350px\] {
+      width: 350px;
+    }
+    .w-full {
+      width: 100%;
+    }
+    .w-10 {
+      width: 2.5rem;
+    }
+    .aspect-square {
+      aspect-ratio: 1 / 1;
+    }
+    .aspect-video {
+      aspect-ratio: 16 / 9;
+    }
+    .h-full {
+      height: 100%;
+    }
+    .text-xl {
+      font-size: 1.25rem;
+    }
+    .sm\:text-2xl {
+      font-size: 1.5rem;
+    }
+    .text-\[10px\] {
+      font-size: 10px;
+    }
+    .sm\:text-\[12px\] {
+      font-size: 12px;
+    }
+    .px-10 {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+    .py-5 {
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+    }
+    .pt-5 {
+      padding-top: 1.25rem;
+    }
+    .rounded-full {
+      border-radius: 9999px;
+    }
+    .z-40 {
+      z-index: 40;
+    }
+    .border-4 {
+      border-width: 4px;
+    }
+    .border-rose-900 {
+      border-color: #9b2c2c;
+    }
+    .flex {
+      display: flex;
+    }
+    .flex-col {
+      flex-direction: column;
+    }
+    .items-center {
+      align-items: center;
+    }
+    .justify-center {
+      justify-content: center;
+    }
+    .justify-start {
+      justify-content: flex-start;
+    }
+    .h-screen {
+      height: 100vh;
+    }
+    .card {
+      display: inline-block;
+    }
+    [clip-path] {
+      clip-path: polygon(50% 50%, 100% 0%, 0% 0%);
+    }
+  </style>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+  <div class="card">
+    <div class="relative bg-black w-[300px] sm:w-[350px] group transition-all duration-700 aspect-video flex items-center justify-center">
+      <div class="transition-all flex flex-col items-center py-5 justify-start duration-300 group-hover:duration-1000 bg-white w-full h-full absolute group-hover:-translate-y-16">
+        <p class="text-xl sm:text-2xl font-semibold text-gray-500 font-serif">Thank You</p>
+        <p class="px-10 text-[10px] sm:text-[12px] text-gray-700">It’s so nice that you had the time to view this idea</p>
+        <p class="font-serif text-[10px] sm:text-[12px] text-gray-700">Wishing you a fantastic day ahead!</p>
+        <p class="font-sans text-[10px] text-gray-700 pt-5">SMOOKYDEV</p>
+      </div>
+      <button class="seal bg-rose-500 text-red-800 w-10 aspect-square rounded-full z-40 text-[10px] flex items-center justify-center font-semibold [clip-path:polygon(50%_0%,_80%_10%,_100%_35%,_100%_70%,_80%_90%,_50%_100%,_20%_90%,_0%_70%,_0%_35%,_20%_10%)] group-hover:opacity-0 transition-all duration-1000 group-hover:scale-0 group-hover:rotate-180 border-4 border-rose-900">
+        SMKY
+      </button>
+      <div class="tp transition-all duration-1000 group-hover:duration-100 bg-neutral-800 absolute group-hover:[clip-path:polygon(50%_0%,_100%_0,_0_0)] w-full h-full [clip-path:polygon(50%_50%,_100%_0,_0_0)]"></div>
+      <div class="lft transition-all duration-700 absolute w-full h-full bg-neutral-900 [clip-path:polygon(50%_50%,_0_0,_0_100%)]"></div>
+      <div class="rgt transition-all duration-700 absolute w-full h-full bg-neutral-800 [clip-path:polygon(50%_50%,_100%_0,_100%_100%)]"></div>
+      <div class="btm transition-all duration-700 absolute w-full h-full bg-neutral-900 [clip-path:polygon(50%_50%,_100%_100%,_0_100%)]"></div>
+    </div>
+  </div>
+</body>
+</html>
