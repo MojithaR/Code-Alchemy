@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head> <!--Adding a title as (a)-->
+        <title>
+            My shopping cart
+        </title>
+        <style> 
+            img{  
+                border-radius: 50%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-style: ;
+            }
+            hr{
+                height: 2px;
+                border-width: 1px;
+                color: gray;
+                background-color: black;
+            }
+            #Thor{
+                text-align: center;
+                font-family: fantasy;
+                
+            }
+           /*Adding menu bar designs*/
+            #loki{
+                list-style-type: none;
+                margin: 5px;
+                padding: 2px;
+                overflow: hidden;
+                background-color: black;
+            }
+            #odin{
+                float: left;
+            }
+            li a{
+                display: block;
+                color: rgb(238, 140, 140);
+                text-align: center;
+                padding: 16px;
+                text-decoration: dotted;
+            }
+            a:hover{
+                background-color: gray;
+                font-size: large;
+            }
+            /*finish menu bar designs*/
+
+            /*Start table designs*/
+            table{
+                border: 2px solid darkblue;
+                border-collapse: collapse;
+                border-color:black;
+                width: 100%;
+                height: 100%;
+
+
+            }
+            th,td{
+                font-size: medium;
+                font-weight: bold;
+                border: 1px solid gray;
+                border-collapse: collapse;
+                border-color:gray;
+            }
+            /*finish table designs*/
+
+             /*footer hyperlink designs*/
+            h4{
+                color: gray;
+                text-align: center;
+                font-weight: bolder;
+                font-weight: 200;
+            }
+            #asgaurdian{
+                color: blue;
+                text-align: center;
+            }
+
+             /*start background designs*/
+             body,html{
+                background-image: url("background.jpg");
+                height: 100%;
+                background-attachment: fixed;
+                background-size: contain;
+             }
+          
+        </style>
+        <script src="js/myScript.js"> </Script>
+
+        <script>   
+            alert("News page loaded");
+            document.write(Date());
+
+            loadData(data)
+        </script>
+    </head>
+
+    <body>
+        <!--Adding image as (b)-->
+        <img src="shopping cart.png" alt="Shopping Cart" 
+        width="200px" height="200px">
+
+        <!--Adding heding as (c)-->
+        <article>
+            <header>
+                <h3 id="Thor">Shopping Cart</h3>
+                <h3 id="Thor">Online Shopping Store</h3>
+            </header>
+
+            <hr>  <!--Adding horizontal line as (d)-->
+        </article>
+                 <!--Adding menu bar line as (e)-->
+        <ul id="loki" >
+            <li id="odin"><a href="#home">Home</a></li>
+            <li id="odin"><a href="www.news.html">News</a></li>
+            <li id="odin"><a href="#Contact">Contact</a></li>
+            <li id="odin"><a href="#About">About</a></li>
+        </ul>
+          <!--Adding table as (f)-->
+         <table>
+            <tr>
+                <th>Item Name</th>
+                <th>Desciption</th>
+            </tr>
+            <tr>
+                <td>Apple Iphone Xs Max</td>
+                <td>
+                    <ul>
+                        <li>True tone disply</li>
+                        <li><span style="color: red;">
+                            Wide colour Display (P3) 
+                        </span>
+                        </li>
+                        <li>3D touch</li>
+                        <li>624cd/m2 max Brightness coating</li>
+                        <li>Finger print -resistant oleaphobic coating</li>
+                        <li>support for display
+                            <span style="color: red;">mulpiple language</span>  and characteers simultaniously <br></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Apple Iphone XS Max</td>
+                <td>
+                    <ol>
+                        <li>True tone Display</li>
+                        <li>Wide colour Display</li>
+                        <li>3D touch</li>
+                        <li>624cd/m2 max brightness(typiclly)</li>
+                        <li>Finger print -resistant oleaphobic coating</li>
+                        <li>Support for display of multiple language and characrors simultaniously</li><br>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>Apple Iphone 8S plus</td>
+                <td>
+                    <ul>
+                        <li>True tone Display</li>
+                        <li>Wide colour Display(p3)</li>
+                        <li>3D touch</li>
+                        <li>624cd/m2 max brightness(typiclly)</li>
+                        <li>Finger print -resistant oleaphobic coating</li>
+                        <li>Support for display of multiple language and characrors simultaniously</li>
+                    </ul>
+                </td>
+            </tr>
+         </table> 
+         <!--end of table as (f)-->
+
+         <!--Adding creators name and hyper link-->
+         <h4> Created by Mojitha Ranasinghe </h4>
+        <h4><a id="asgaurdian" href="https://courseweb.sliit.lk/">Visit to Our course</a></h4>
+        
+        <!--End of page designing-->
+
+        
+    </body>
+</html>

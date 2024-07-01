@@ -1,0 +1,36 @@
+/*a) adding background image*/
+body,html{    
+    background-image: url("backgroundex2.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+/* b/c/d) change the font family
+   hange the font color of the heading to Brown
+   Change the font size of the heading to 36 px*/
+h2{
+    font-family:Arial, Helvetica, sans-serif ;
+    color: brown;
+    font-size: 36px;
+}
+/*Add a 2px, solid, blue border around each paragraph.*/
+p{
+    border: 2px solid blue;
+    border-color: blue;
+    border-style: solid;
+    /*f. Set the top and bottom margins to 25px and right and left margins are 50px for each 
+paragraph*/
+   margin-top: 25px;
+   margin-bottom: 25px;
+   margin-left: 50px;
+   margin-right: 50px ;
+
+   /*. Set the top padding is 25px, right and left paddings are 50px, and bottom padding is 75px
+for each paragraph.*/
+  padding: 25px 50px 75px;
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 75px;
+}
+

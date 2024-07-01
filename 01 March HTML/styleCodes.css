@@ -1,0 +1,18 @@
+<!Style By styleCodes external file>
+@charset "utf-8";
+
+<!Style By using CLASS>
+.Classone
+{
+    color: blueviolet;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 32px;
+}
+.Classtwo
+{
+    color: aqua;
+    text-align: left;
+    font-size: 56px;
+    font-family: Arial, Helvetica, sans-serif;
+}
