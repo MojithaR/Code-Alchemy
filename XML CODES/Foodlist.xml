@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<breakfast_menu>
+   <food>
+       <name>Belgian Waffles</name>
+       <price>$5.99</price>
+       <description>
+       Two of our famous belgian waffels with plenty of real maple syrup
+       </description>
+       <calories>650</calories>
+   </food>
+
+   <food>
+       <name>Stawberry Belgian waffels</name>
+       <price>$7.87</price>
+       <description>
+       Light belgian waffels covers with stawberry and whipped cream
+       </description>
+       <calories>900</calories>
+   </food>
+
+   <food>
+       <name>Berry-Berry Belgian waffels</name>
+       <price>$8.95</price>
+       <description>
+       Belgian waffel covers with assorte freash berries and whipped
+       </description>
+       <calories>600</calories>
+   </food>
+
+   <food>
+       <name>Home style Breakfast</name>
+       <price>$6.98</price>
+       <description>
+       Two eggs, bacon of sausage, toast and ever popular hash brons
+       </description>
+       <calories>950</calories>
+   </food>
+</breakfast_menu>
