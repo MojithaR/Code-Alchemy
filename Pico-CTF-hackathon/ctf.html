@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Server Ping Checker</title>
+</head>
+<body>
+  <h1>Server Ping Checker</h1>
+  <label for="serverIp">Enter Server IP:</label>
+  <input type="text" id="serverIp" placeholder="Enter server IP">
+  <button onclick="checkPing()">Check Ping</button>
+  <p id="result"></p>
+
+  <script>
+    function checkPing() {
+      var serverIp = document.getElementById("serverIp").value;
+      var resultElement = document.getElementById("result");
+
+      if (!serverIp) {
+        resultElement.innerHTML = "Please enter a valid server IP.";
+        return;
+      }
+
+      var startTime = new Date().getTime();
+
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4) {
+          var endTime = new Date().getTime();
+          var pingTime = endTime - startTime;
+
+          if (xhr.status == 200) {
+            resultElement.innerHTML = "Ping successful. Time: " + pingTime + " ms";
+          } else {
+            resultElement.innerHTML = "Ping failed. Status code: " + xhr.status;
+          }
+        }
+      };
+
+      xhr.open("GET", "http://" + serverIp, true);
+      xhr.send();
+    }
+  </script>
+</body>
+</html>
