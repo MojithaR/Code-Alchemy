@@ -1,0 +1,3 @@
+# secret.py
+
+FLAG = "!?}De!e3d_5n_nipaOw_3eTR3bt4{_THB"
